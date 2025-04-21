@@ -72,16 +72,16 @@
                 </h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#">Guitarra Ibanez</a>
+                        <a href="#">Iniciação</a>
                     </li>
                     <li class="nav-item ellipsis">
-                        <a href="#">Guitarra Tagima</a>
+                        <a href="#">Segredo na floresta pt. 2</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Guitarra Special Tribute</a>
+                        <a href="#">O Espreitador</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Guitarra Les     Paul Vintage</a>
+                        <a href="#">Livro do Bill</a>
                     </li>
                 </ul>
             </article>

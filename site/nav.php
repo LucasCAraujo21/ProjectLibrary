@@ -10,7 +10,7 @@
             </a>
             <!-- Buscar -->
             <form action="index.php" class="col-md-6 d-flex align-items-center">
-                <input type="text" name="txtbuscar" placeholder="Pesquisar Instrumentos aqui">
+                <input type="text" name="txtbuscar" placeholder="Pesquisar Livros aqui">
 
                 <button class="d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -43,36 +43,6 @@
                         </svg>  
                         Carrinho
                     </a>
-                    <!-- Carrinho -->
-                    <div class="cart" style="z-index:1000">
-                        <h2 class="cart-title">Seu Carrinho</h2>
-                        <div class="cart-content">
-                            <div class="cart-box">
-                                <img src="./assets/images/" class="img-fluid cart-img" alt="Guitarras">
-                                <div class="detail-box">
-                                    <div class="cart-product-title"><?php echo $exibe['nome_prod'];?></div>
-                                    <div class="cart-price">R$<?php echo $exibe['valor'];?></div>
-                                    <div class="cart-price-title">Quantidade: <?php echo $exibe['quant_prod'];?></div>
-                                </div>
-                                    
-                                <!--Remover-->
-                                <a href="Cart0.php?id=<?php echo $exibe['id_prod']; ?>">
-                                <i class="bx bxs-trash-alt cart-remove"></i>
-                                </a>
-                            </div>   
-                        </div>
-
-                            <!--Fechar Carrinho-->
-                            <i class='bx bx-x' id="close-cart"></i>
-                            
-                            <div class="total">
-                                <div class="total-title">Total</div>
-                                <div class="total-price">R$<?php echo $exibeTotal['valor'];?></div>
-                            </div>
-                        <a href="carrinho.php">   
-                            <button type="button" class="btn btn-success col-md-12 finaliza">Finalizar compra</button>
-                        </a>
-                    </div>
                 </li>
             </ul>
         </article>

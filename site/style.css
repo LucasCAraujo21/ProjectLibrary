@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@300;500;900&display=swap");
+*{
+  font-size: 18px;
+}
+
 header {
   background-color: rgb(255, 191, 0);
   padding: 25px;
@@ -166,8 +170,9 @@ header #close-cart {
 }
 
 nav.nav-produtos {
-  background: #ffffff;
-  color: #103AC5;
+  background-color: rgb(27, 27, 27);
+  color: rgb(255, 191, 0);
+  font-size: 25 px;
 }
 nav.nav-produtos a {
   color: #103AC5;
@@ -177,14 +182,16 @@ nav.nav-produtos ul.nav li {
   padding: 10px 10px;
 }
 nav.nav-produtos ul.nav li svg {
-  font-size: 20px;
+  font-size: 30px;
   margin-right: 10px;
 }
 nav.nav-produtos ul.nav li:hover {
-  background: #83b1f6;
+  background: rgb(255, 191, 0);
+  color: black;
 }
 nav.nav-produtos ul.nav li:hover ul.nav {
   display: block;
+
 }
 nav.nav-produtos ul.nav li ul.nav {
   z-index: 999;
@@ -193,7 +200,7 @@ nav.nav-produtos ul.nav li ul.nav {
   top: 44px;
   left: 0;
   background: white;
-  border-top: solid #a108e8;
+  border-top: solid rgb(27, 27, 27);
   width: 100%;
 }
 nav.nav-produtos ul.nav li ul.nav li {
@@ -271,8 +278,8 @@ nav.nav-produtos ul.nav li ul.nav li {
   margin: 30px 0;
 }
 .produtos h1 {
-  color: #ffffff;
-  background: linear-gradient(90deg,#83b1f6 0%,#0d38cf 36%, #a108e8 100%);
+  color: rgb(255, 191, 0);
+  ;
   border-radius: 100px;
   border: none;
 }
@@ -297,19 +304,19 @@ nav.nav-produtos ul.nav li ul.nav li {
 }
 
 footer {
-  background-color: rgb(255, 191, 0);;
+  background-color: rgb(27, 27, 27);
   padding: 25px 0;
   color: white;
 }
-footer a {  
+footer a {
   color: white;
 }
 footer a:hover {
-  color: white;
+  color: rgb(27, 27, 27);
 }
 footer h4 {
   font-size: 19px;
-  color: white;
+  color: rgb(255, 191, 0);
 }
 footer ul li li.ellipsis {
   width: 100%;
@@ -547,7 +554,7 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
-  color: #000;
+  color: rgb(255, 191, 0);
 }
 
 small {
