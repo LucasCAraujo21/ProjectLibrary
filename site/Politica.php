@@ -17,11 +17,11 @@
 
     <section class="espaco"></section>
 
-    <h1 class="titulo">Política de Privacidade</h1>
+    <h1 class="titulo" style= "text-shadow: 2px 2px 5px;">Política de Privacidade</h1>
     
 
    
-        <section class="text">
+        <section class="text" style="padding: 20px; margin-left: 300px; margin-right: 300px;">
             
             <ul>
                 <li>
@@ -47,13 +47,13 @@
                 </li>               
 
             
-                <li><h4>Segurança dos Dados:</h4> Implementamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</li>
+                <li><h4 style= "text-shadow: 2px 2px 5px;">Segurança dos Dados:</h4> Implementamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição.</li>
 
 
-                <li> <h4>Seus Direitos:</h4> Você tem o direito de acessar, corrigir ou excluir suas informações pessoais. Também pode optar por não receber comunicações de marketing. Para exercer esses direitos ou se tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco através dos canais disponíveis em nosso site.</h4></li>
+                <li> <h4 style= "text-shadow: 2px 2px 5px;">Seus Direitos:</h4> Você tem o direito de acessar, corrigir ou excluir suas informações pessoais. Também pode optar por não receber comunicações de marketing. Para exercer esses direitos ou se tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco através dos canais disponíveis em nosso site.</h4></li>
 
 
-                <li><h4>Alterações na Política de Privacidade:</h4> Reservamo-nos o direito de atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas em nosso site com a data de revisão. Recomendamos que você revise esta Política de Privacidade regularmente para estar ciente de quaisquer atualizações.</li>            
+                <li><h4 style= "text-shadow: 2px 2px 5px;">Alterações na Política de Privacidade:</h4> Reservamo-nos o direito de atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas em nosso site com a data de revisão. Recomendamos que você revise esta Política de Privacidade regularmente para estar ciente de quaisquer atualizações.</li>            
 
                     <section class="espaco"></section>
 

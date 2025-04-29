@@ -32,7 +32,8 @@ li{
 
 h1{
     padding-top: 3vh;
-    padding-left: 25vh;
+    text-shadow: 2px 2px 5px red;
+    color: yellow
 }
 
  /* -- classes de imagens -- */
@@ -44,7 +45,7 @@ h1{
     height: 13vh;
 }
 
-.menina{
+.livraria{
     text-align: right;
     padding-right: 25vh;
 }
