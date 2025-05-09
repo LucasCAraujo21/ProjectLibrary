@@ -24,7 +24,7 @@
             <!-- login funcionario -->
             <ul class="col-md-3 nav d-flex align-items-center justify-content-around">
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="login.html">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
                             xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -69,28 +69,28 @@
                 <!-- SubMenu -->
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#guitarra">
+                        <a href="#sci-fi">
                             Sci-fi
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#violões">
+                        <a href="#terror">
                             Terror
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#bateria">
+                        <a href="#rpg">
                             RPG
                         </a>
 
                     </li>
                     <li class="nav-item">
-                        <a href="#piano">
+                        <a href="#estudos">
                             Estudos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#violinos">
+                        <a href="#hqs">
                             Hqs
                         </a>
                     </li>

@@ -25,25 +25,16 @@
             
             <ul>
                 <li>
-                    Na Melodia Shop, valorizamos a privacidade e a segurança dos dados dos nossos clientes. Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações pessoais que você nos fornece ao usar nosso site. Ao acessar ou utilizar nosso site, você concorda com os termos desta Política de Privacidade.
-
-                    Nossa loja respeita o sigilo de suas informações e garante que seus dados não serão disponibilizados, cedidos ou comercializados para terceiros.
+                Na Books Online, respeitamos sua privacidade e nos comprometemos a proteger todos os dados pessoais que você compartilha conosco. As informações fornecidas em nosso site ou durante qualquer interação são utilizadas exclusivamente para melhorar sua experiência como cliente, realizar entregas, processar pagamentos e oferecer conteúdos relevantes.
                 </li>
 
                 <li>
-
-                    Informações Coletadas: Podemos coletar informações pessoais fornecidas por você, como nome, endereço de e-mail, endereço de entrega, informações de pagamento, tamanho de lingerie e preferências de compra. Também podemos coletar informações automaticamente, como endereço IP, tipo de navegador, páginas visitadas e tempo de visita.
-
+                Não compartilhamos, vendemos ou divulgamos seus dados a terceiros, exceto quando necessário para a prestação de serviços (como operadoras de pagamento e empresas de entrega), sempre seguindo critérios rigorosos de segurança e confidencialidade.
                 </li>
 
 
                 <li>
-                    Uso das Informações: Utilizamos as informações coletadas para processar pedidos, fornecer suporte ao cliente, personalizar sua experiência de compra, enviar comunicações de marketing, melhorar nosso site e cumprir com as obrigações legais. Todas as informações fornecidas em nosso site são de uso exclusivo para o procedimento de compra, personalização, facilitação e não são disponibilizadas a terceiros. Os dados fornecidos são registrados em nosso banco de dados de forma automatizada e armazenados com total segurança sem a intervenção humana. Os e-mails e telefones disponibilizados são utilizados apenas para contatos referentes às compras realizadas em nosso site. Com prévia autorização dos clientes, enviamos e-mails informando as promoções vigentes em nossa loja, porém nossos clientes podem solicitar o não recebimento das ofertas. Não há o armazenamento de informações que não sejam necessárias para a efetivação da compra. O uso do CPF é exigido por lei para a emissão de notas fiscais e para o envio de mercadorias. As senhas fornecidas em nosso banco de dados são arquivadas de maneira criptografada, permitindo que apenas o proprietário do cadastro tenha conhecimento. Os números de cartões de crédito fornecidos são registrados diretamente no sistema de intermediação de pagamentos Paypal (empresa responsável pela analise, aprovação ou recusa de pagamentos por cartão de crédito), não permitindo o acesso a essas informações por parte do lojista (quando os dados do cartão são enviados, a Paypal realiza a verificação da transação on-line e retorna apenas se a compra está aprovado ou não).
-
-                    Em caso de cancelamento do cadastro, os dados serão apagados em até 48 horas, de todas as areas onde este esteja aplicado, exceto da área de vendas e financeiro, onde o mesmo ficará armazenado em caso haver histórico de compras (como informações relacionadas a notas fiscais).
-
-                    Cookies e Tecnologias Semelhantes: Nosso site utiliza cookies e outras tecnologias de rastreamento para melhorar sua experiência de navegação e coletar informações sobre como você interage com nosso site. Você pode optar por desativar os cookies no seu navegador, mas isso pode afetar a funcionalidade do site.
-
+                Utilizamos cookies apenas para fins de navegação e análise de desempenho, com o objetivo de tornar sua visita mais personalizada e eficiente. Você pode, a qualquer momento, gerenciar suas preferências de cookies no seu navegador.
                 </li>               
 
             
@@ -57,8 +48,8 @@
 
                     <section class="espaco"></section>
 
-                <li>Ao continuar a usar nosso site, você concorda com esta Política de Privacidade e com o processamento das suas informações pessoais conforme descrito aqui.</li>
-                <li>Obrigado por escolher a Melodia Shop para suas compras.
+                <li>Ao utilizar nossos serviços, você concorda com esta política. Caso tenha dúvidas ou deseje alterar ou excluir seus dados pessoais, nossa equipe está à disposição para atendê-lo com transparência e agilidade.</li>
+                <li>Obrigado por escolher a Books Online para suas compras.
             </ul>
 
         </section>
