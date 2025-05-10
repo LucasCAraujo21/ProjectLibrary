@@ -24,46 +24,54 @@
             }
         </style>
     </head>
+
     <body>
-        <?php ?>
+        <?php 
+        include 'nav.php';
+        include 'cabecalho.html';
+        include 'conexao.php'; 
+        //variavel "consulta" que recebe variavel "cn"(conexao), no qual recebe o resultado de uma consulta no banco
+        $consuta = $cn-> query('select nome_liv, valor, img_liv, quant_liv from livro');
 
-        <?php include 'nav.php' ?>
-        <?php include 'cabecalho.html' ?>
+        ?>
+
         <main>
-
             <!-- Container Produtos -->
             <section class="container produtos">
-                <div class="col-sm-3">
-                    <img src="https://i.pinimg.com/564x/7a/4c/bc/7a4cbcd3767b19ccc345b21048b7798a.jpg" class="img-responsive" style="width:100%">
-                    <div><h1>Nome do livro</h1></div>
-                    <div><h4>R$45,00 </h4></div>
-                    
-                </div>
+                <!-- variavel "exibe" recebe o resultado da consulta em forma de matriz -->
+                <?php while($exibe = $consuta->fetch(PDO::FETCH_ASSOC)){ ?>
+                    <div class="col-sm-3">
+                        <img src="assets/images/<?php echo $exibe['img_liv']; ?>.png" class="img-responsive" style="width:100%">
+                        <div><h1><?php echo mb_strimwidth($exibe['nome_liv'],0, 30, '...'); ?></h1></div>
+                        <br>
+                        <div><h2>R$ <?php echo number_format($exibe['valor'],2,',','.'); ?></h></div>
 
-                <div class="col-sm-3">
-                    <img src="https://i.pinimg.com/564x/7a/4c/bc/7a4cbcd3767b19ccc345b21048b7798a.jpg" class="img-responsive" style="width:100%">
-                    <div><h1>Nome do livro</h1></div>
-                    <div><h4>R$45,00 </h4></div>
-                    
-                </div>
+                        <div class="text-center">
+                            <button class="btn btn-lg btn-block btn-warning" style="color:white">
+                                <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+                            </button>
+                        </div>
 
-                <div class="col-sm-3">
-                    <img src="https://i.pinimg.com/564x/7a/4c/bc/7a4cbcd3767b19ccc345b21048b7798a.jpg" class="img-responsive" style="width:100%">
-                    <div><h1>Nome do livro</h1></div>
-                    <div><h4>R$45,00 </h4></div>
-                    
-                </div>  
+                        <div class="text-center" style="margin-top: 5px; margin-bottom: 5px">
+                            <?php if($exibe['quant_liv']> 0){ ?>
+                                <button class="btn btn-lg btn-block btn-warning">
+                                    <span class="glyphicon glyphicon-shopping-cart" style="color:white"> Adicionar</span>
+                                </button>
+                            <?php }
 
-                <div class="col-sm-3">
-                    <img src="https://i.pinimg.com/564x/7a/4c/bc/7a4cbcd3767b19ccc345b21048b7798a.jpg" class="img-responsive" style="width:100%">
-                    <div><h1>Nome do livro</h1></div>
-                    <div><h4>R$45,00 </h4></div>
-                    
-                </div>
-            
+                            else { ?>
+                            <button class="btn btn-lg btn-block btn-danger" style="color:white" disabled>
+                                <span class="glyphicon glyphicon-shopping-cart"> Indisponível</span>
+                            </button>
+                            <?php } ?>
+
+                        </div>
+                                                    
+                   
+                    </div>
+                <?php } ?>
             </section >
             <!-- Fim Container Produtos -->
-
         </main>
 
 

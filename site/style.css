@@ -15,10 +15,8 @@ header form input[type=text] {
   border: none;
   padding: 10px 20px;
 }
-h3 {
-  color: white;
-  background: linear-gradient(90deg,#83b1f6 0%,#0d38cf 36%, #a108e8 100%);
-  border-radius: 100px;
+h2 {
+  color: black;
   border: none;
 }
 header form button {
@@ -376,8 +374,6 @@ footer ul li li.ellipsis {
 .btn {
   display: inline-block;
   padding: 0.8rem 3rem;
-  border: 0.2rem solid #35cd68;
-  color: #35cd68;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: 0.5rem;
@@ -394,7 +390,7 @@ footer ul li li.ellipsis {
   right: 0;
   width: 0%;
   height: 100%;
-  background: #35cd68;
+  background-color: rgb(27, 27, 27);
   transition: 0.3s linear;
   z-index: -1;
 }
