@@ -54,12 +54,10 @@ values(default, 'Sci-fi'),
 (default, 'Hqs');
 
 insert into livro (nome_liv, id_categoria, valor, img_liv, quant_liv, desc_liv)
-values ('Ordem Paranormal — O Espreitador e Outras Histórias', '2' ,'120.00', 'espreitador', '500',
-'<p>Onde Termina O Medo… E Começa a Realidade?</p>
-Primeiro lançamento de literatura de Ordem Paranormal ― universo de terror criado por Cellbit e fenômeno de público em todo o Brasil ― este livro traz três novelas completas: O Espreitador, Dia das Mães Maldito e Photophobia.</p>
-Escritas por três dos principais autores do gênero no país, os best-sellers Felipe Castilho, Karen Soarele e Leonel Caldela, as novelas são baseadas na história de Daniel Hartmann, um dos primeiros e mais famosos personagens desse universo.</p>
-Na mitologia de Ordem Paranormal, Hartmann era um autor de sucesso e foi o responsável involuntário pela criação de monstros tão terríveis quanto icônicos. Isso porque o medo que seus leitores sentiram de suas criações literárias era tão grande que permitiu que elas deixassem as páginas dos livros e se manifestassem na realidade.</p>
-Agora, com este livro, você poderá ler as mesmas histórias que aterrorizaram as pessoas do universo de Ordem Paranormal. Vamos apenas torcer para que, desta vez, as criaturas se mantenham no reino da ficção.<p>'
+values ('Ordem Paranormal Vol. 2 — O Segredo na Floresta, parte 1', '5' ,'130.00', 'osnf1', '0',
+'<p>Liz Weber e Thiago Fritz, ainda marcados pelas cicatrizes físicas e emocionais de sua primeira missão, precisam se envolver em outro caso paranormal: o desaparecimento da Equipe Kelvin.</p>
+Auxiliados pelo experiente Christopher Cohen e pelos novatos César Oliveira e Joui Jouki, os investigadores rumam até a cidade de Carpazinha… De onde sairão transformados para sempre.</p>
+O Segredo da Floresta é a história que consagrou Ordem Paranormal como um fenômeno em todo o país e foi criada por Rafael "Cellbit" Lange. Adaptada por Fábio Yabu e Akila, a versão em quadrinhos apresenta fatos nunca antes mostrados sobre o passado, o presente e o futuro dos personagens.<p>'
 );
 
 
@@ -82,11 +80,17 @@ from livro inner join categoria on livro.id_categoria = categoria.id_categoria;
 select * from vw_livro;
 select * from vw_livro where id_liv = 2;
 
+select nome_liv, valor, img_liv from livro;
+
 -- alter table
 alter table livro
 MODIFY COLUMN desc_liv varchar(2000) not null;
 
 
+-- update
+UPDATE livro
+SET img_liv = 'iniciacao'
+WHERE ID_LIV = 1;
 
 
 

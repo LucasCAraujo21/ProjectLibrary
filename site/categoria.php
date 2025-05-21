@@ -27,13 +27,14 @@
 
     <body>
         <?php 
-        session_start();
-        include 'conexao.php'; 
         include 'nav.php';
         include 'cabecalho.html';
+        include 'conexao.php'; 
+
+        $cat = $_GET['cat'];
 
         //variavel "consulta" que recebe variavel "cn"(conexao), no qual recebe o resultado de uma consulta no banco
-        $consulta = $cn-> query('select id_liv, nome_liv, valor, img_liv, quant_liv from livro');
+        $consulta = $cn-> query("select id_liv, nome_liv, valor, img_liv, quant_liv from vw_livro where ds_categoria = '$cat'");
 
         ?>
 
@@ -69,7 +70,9 @@
                             </button>
                             <?php } ?>
 
-                        </div>                                                
+                        </div>
+                                                    
+                   
                     </div>
                 <?php } ?>
             </section >

@@ -26,17 +26,29 @@
     </head>
 
     <body>
-        <?php 
+        <?php
         session_start();
-        include 'conexao.php'; 
+
+        include 'conexao.php';
         include 'nav.php';
         include 'cabecalho.html';
 
-        //variavel "consulta" que recebe variavel "cn"(conexao), no qual recebe o resultado de uma consulta no banco
-        $consulta = $cn-> query('select id_liv, nome_liv, valor, img_liv, quant_liv from livro');
+        $pesquisar = $_GET['txtbuscar'];
+        if(empty($_GET['txtbuscar']))
+        {
+            echo "<script lang='JavaScript'> window.alert('Digite o nome de um produto!');</script>";
+            echo "<script lang='JavaScript'> window.location.replace('index.php');</script>";
+        }
 
+        $consulta = $cn-> query("select * from vw_livro where nome_liv like concat ('%', '$pesquisar', '%')");
+        if($consulta->rowCount() == 0)
+        {
+            echo "<script lang='JavaScript'> window.alert('Este produto não existe!');</script>";
+            echo "<script lang='JavaScript'> window.location.replace('index.php');</script>";
+        }
         ?>
-
+	
+        <h1 class="text-center " id="guitarra">Resultados</h1>
         <main>
             <!-- Container Produtos -->
             <section class="container produtos">
@@ -75,7 +87,6 @@
             </section >
             <!-- Fim Container Produtos -->
         </main>
-
 
         <?php include 'rodape.php' ?>
 
