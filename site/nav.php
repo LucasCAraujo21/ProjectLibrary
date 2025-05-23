@@ -19,9 +19,7 @@
                     </svg>
                 </button>
             </form>
-
-
-            
+ 
             <!-- login -->
             <ul class="col-md-3 nav d-flex align-items-center justify-content-around">
                 <?php if(empty($_SESSION['ID'])) { ?>
@@ -41,7 +39,7 @@
                         $exibe_usu = $consulta_usu->fetch(PDO::FETCH_ASSOC);
                         ?>
                         <li class="nav-item">
-                            <a href="#">
+                            <a href="areaCliente.php">
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -55,7 +53,7 @@
                     <!-- valida se é adm -->
                     <?php } else {?>
                         <li class="nav-item">
-                            <a href="adm.php">
+                            <a href="areaAdm.php">
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />

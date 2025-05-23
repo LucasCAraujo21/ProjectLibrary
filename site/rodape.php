@@ -11,16 +11,13 @@
                 </h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#">(11) 94908-1179</a>
+                        <a href="#">(11) 98084-8138</a>
                     </li>
                     <li class="nav-item">
                         <a href="mailto:contato@loja.com.br">BooksOnline@gmail.com.br</a>
                     </li>
                     <li class="nav-item">
                         Horario de Atendimento on-line: Segunda à sexta da 9:00 as 19:00
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" target="_blank">Nosso Instagram</a>
                     </li>
 
                 </ul>
@@ -102,7 +99,7 @@
 <script src="./assets/js/bootstrap.js"></script>
 
 <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=11949081179&text=Ol%C3%A1,%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20loja!">
+<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=11980848138&text=Ol%C3%A1,%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20loja!">
 <div class="rwb-tooltip">Fale conosco</div>
 <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
 </a>

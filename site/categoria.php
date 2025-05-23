@@ -27,9 +27,10 @@
 
     <body>
         <?php 
+        session_start();
+        include 'conexao.php'; 
         include 'nav.php';
         include 'cabecalho.html';
-        include 'conexao.php'; 
 
         $cat = $_GET['cat'];
 
@@ -44,7 +45,7 @@
                 <!-- variavel "exibe" recebe o resultado da consulta em forma de matriz -->
                 <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){ ?>
                     <div class="col-sm-3">
-                        <img src="assets/images/<?php echo $exibe['img_liv']; ?>.png" class="img-responsive" style="width:100%">
+                        <img src="assets/images/<?php echo $exibe['img_liv']; ?>" class="img-responsive" style="width:100%">
                         <div><h1><?php echo mb_strimwidth($exibe['nome_liv'],0, 25, '...'); ?></h1></div>
                         <br>
                         <div><h2>R$ <?php echo number_format($exibe['valor'],2,',','.'); ?></h></div>

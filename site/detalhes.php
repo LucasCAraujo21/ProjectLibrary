@@ -51,7 +51,7 @@
         <div class="shop-content">
             <article class="row produtos-compra">
                 <figure class="col-md-7 mb-5">
-                        <img src="assets/images/<?php echo $exibe['img_liv']; ?>.png" class="img-responsive" style="width:100%; padding-top: 20px;"
+                        <img src="assets/images/<?php echo $exibe['img_liv']; ?>" class="img-responsive" style="width:100%; padding-top: 20px;"
                         alt="erro">
                 </figure>
                 <section class="col-md-5 mb-5 d-flex flex-column justify-content-around">

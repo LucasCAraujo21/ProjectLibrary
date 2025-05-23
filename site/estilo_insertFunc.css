@@ -1,0 +1,86 @@
+*{
+    width: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0px;
+ 
+}
+body{
+    background: url("assets/images/fundo cis.jpeg") 
+    no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    overflow: hidden;
+    background-color:#151515 ;    
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+.area-login{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(17, 17, 17, 0.726);
+ 
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 191, 0);
+    width: 60vh;
+    height: 60vh;
+    padding: 4vh;
+    color:rgb(0, 0, 0) ;
+    border-radius: 1vh;
+}
+.input::placeholder{
+    color: rgb(24, 24, 24);
+}
+.login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login input{
+    margin-top: 1vw;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    height: 5vh;
+    border-radius: 2vh;
+    color: rgb(24, 24, 24);
+    padding-left: 1vh;
+}
+.login p{
+    font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    height: auto;
+    padding-left: 3vh;
+}
+.button{
+    background-color: rgb(206, 206, 206);
+}
+form [type="submit"]{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+}
+.voltar {
+    color:rgb(0, 0, 0);
+    padding-left: 2.3vh;
+    padding-top: 2vh;
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
