@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
     <head>
         <meta charset="UTF-8">
@@ -47,7 +47,7 @@
                         <thead class="liv-trbd">
                         <tr>
                             <!--motra os livros-->
-                            <th><div><img src="assets/images/<?php echo $exibe['img_liv']; ?>" class="img-fluid"></div></th>
+                            <th><div><img src="assets/images/<?php echo $exibe['img_liv'];?>" class="img-fluid"></div></th>
                             <th><div><h4><?php echo $exibe['nome_liv']; ?></h4></div></th>
                             <th><div><h4 >R$ <?php echo $exibe['valor']; ?></h4></div></th>
 

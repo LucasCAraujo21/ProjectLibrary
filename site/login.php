@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="estilo_login.css">
+        <link rel="stylesheet" href="style_login.css">
 
         <title>Faça seu login!</title>
     </head>
@@ -41,6 +41,10 @@
 
                     <div class="register-link">
                         <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se</a></p>
+                    </div>
+
+                    <div class="register-link">
+                        <p><a href="index.php">Voltar</a></p>
                     </div>
                 </form>
             </main>

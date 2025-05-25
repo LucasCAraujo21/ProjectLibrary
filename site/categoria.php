@@ -60,9 +60,11 @@
 
                         <div class="text-center" style="margin-top: 5px; margin-bottom: 5px">
                             <?php if($exibe['quant_liv']> 0){ ?>
-                                <button class="btn btn-lg btn-block btn-warning">
-                                    <span class="glyphicon glyphicon-shopping-cart" style="color:white"> Adicionar</span>
-                                </button>
+                                <a href="carrinho.php?cd=<?php echo $exibe['id_liv'];?>">
+                                    <button class="btn btn-lg btn-block btn-warning">
+                                        <span class="glyphicon glyphicon-shopping-cart" style="color:white"> Adicionar</span>
+                                    </button>
+                                </a>
                             <?php }
 
                             else { ?>

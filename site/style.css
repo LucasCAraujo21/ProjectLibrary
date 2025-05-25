@@ -1013,7 +1013,7 @@ pre code {
 .container-xl {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 0rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1386,8 +1386,8 @@ pre code {
     max-width: 100%;
   }
   .col-sm-1 {
-    flex: 0 0 8.333333%;
-    max-width: 8.333333%;
+    flex: 1 0 8.333333%;
+    max-width: 21.333333%;
   }
   .col-sm-2 {
     flex: 0 0 16.666667%;
@@ -2855,7 +2855,7 @@ textarea.form-control.is-invalid {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 2rem;
+  font-size: 1em;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2975,43 +2975,40 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: rgb(255, 191, 0);
 }
 
 .btn-success:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
 }
 
 .btn-success.focus,
 .btn-success:focus {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
-  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+  background-color: rgb(255, 191, 0);
+  border-color: rgb(255, 191, 0);
+  box-shadow: 0 0 0 0.2rem rgba(255, 191, 0);
 }
 
 .btn-success.disabled,
 .btn-success:disabled {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: rgb(255, 191, 0);
+  border-color: rgb(255, 191, 0);
 }
 
 .btn-success:not(:disabled):not(.disabled).active,
 .btn-success:not(:disabled):not(.disabled):active,
 .show > .btn-success.dropdown-toggle {
   color: #fff;
-  background-color: #1e7e34;
-  border-color: #1c7430;
+  background-color: rgb(255, 191, 0);
+  border-color: rgb(255, 191, 0);
 }
 
 .btn-success:not(:disabled):not(.disabled).active:focus,
 .btn-success:not(:disabled):not(.disabled):active:focus,
 .show > .btn-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 191, 0);
 }
 
 .btn-info {
@@ -10449,15 +10446,32 @@ h1, h2, h3, h4, h5 {
 }/*# sourceMappingURL=style.css.map */
 
 .dados {
-  background-color: #d1d1d1;
+  background-color: #302f2f;
   border-radius: 10px;
   padding: 25px;
 }
 
+
+.dadoTiket:hover{
+  background-color: rgb(27, 27, 27);
+  color:rgb(255, 191, 0);
+  transition-delay: 0.1s;
+  transition-duration: 0.7s;
+}
+
+.dadoTiket{
+  color: white;
+}
+
+.dado{
+  color: white;
+}
+
 .compras {
-  background-color: #d1d1d1;
+  background-color: #302f2f;
   border-radius: 10px;
   padding: 25px;
+  margin-bottom: 25px;
 }
 
 .conta {

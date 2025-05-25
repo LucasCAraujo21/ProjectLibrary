@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="estilo_login.css">
-    <title><Cadastre-se!></Cadastre-se!></title>
+    <link rel="stylesheet" href="style_login.css">
+    <title>Cadastre-se!</title>
 </head>
     <body>
 
@@ -39,6 +39,10 @@
                     </div>
 
                     <button type="submit" class="login">Registrar-se</button>
+
+                    <div class="register-link">
+                        <p><a href="index.php">Voltar</a></p>
+                    </div>
 
                 </form>
             </main>

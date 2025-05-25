@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="alterar_liv.css" />
+        <link rel="stylesheet" href="style_alterar_liv.css" />
         <script src="./assets/js/jquery.js"></script>
         <script src="jquery.mask.js"></script>
         <title>Editar livro</title>
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('#preco').mask('000.000.000.000.000,00', { reverse: true });
             });
         </script>

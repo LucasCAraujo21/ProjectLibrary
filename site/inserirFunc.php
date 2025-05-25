@@ -4,22 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilo_insertFunc.css"/>
+        <link rel="stylesheet" href="style_insertFunc.css"/>
         <title>Cadastrar funcionário</title>
         <script src="./assets/js/jquery.js"></script>
         <script src="jquery.mask.js"></script>
 
-        <script>
-        
-        
-        
-        $(document).ready(function(){
-            
-            $("#cpf").mask("000.000.000-00");
-            
-        });
-        
-    </script>
+        <script>    
+            $(document).ready(function(){
+                
+                $("#cpf").mask("000.000.000-00");
+                
+            });
+        </script>
     </head>
     <body>
 
@@ -70,6 +66,5 @@
                 ?>
             </div>
         </section>
-
     </body>
 </html>

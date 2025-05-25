@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Minha Loja</title>
+        <title>BooksOnline</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,9 +14,10 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <title>Livraria</title>
-        <link rel="stylesheet" href="style.css">
-
+        <title>BooksOnline</title>
+            <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+        
         <style type = "text/css">
             .navbar
             {
@@ -44,7 +45,7 @@
                 <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)){ ?>
                     <div class="col-sm-3">
                         <img src="assets/images/<?php echo $exibe['img_liv']; ?>" class="img-responsive" style="width:100%">
-                        <div><h1><?php echo mb_strimwidth($exibe['nome_liv'],0, 25, '...'); ?></h1></div>
+                        <div><h1><?php echo mb_strimwidth($exibe['nome_liv'],0, 37, '...'); ?></h1></div>
                         <br>
                         <div><h2>R$ <?php echo number_format($exibe['valor'],2,',','.'); ?></h></div>
 
@@ -58,9 +59,11 @@
 
                         <div class="text-center" style="margin-top: 5px; margin-bottom: 5px">
                             <?php if($exibe['quant_liv']> 0){ ?>
-                                <button class="btn btn-lg btn-block btn-warning">
-                                    <span class="glyphicon glyphicon-shopping-cart" style="color:white"> Adicionar</span>
-                                </button>
+                                <a href="carrinho.php?cd=<?php echo $exibe['id_liv'];?>">
+                                    <button class="btn btn-lg btn-block btn-warning">
+                                        <span class="glyphicon glyphicon-shopping-cart" style="color:white"> Adicionar</span>
+                                    </button>
+                                </a>
                             <?php }
 
                             else { ?>
@@ -75,8 +78,6 @@
             </section >
             <!-- Fim Container Produtos -->
         </main>
-
-
         <?php include 'rodape.php' ?>
 
     </body>

@@ -31,13 +31,7 @@
                 </h4>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#">Minha Conta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Meus Pedidos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Rastrear meu Pedido</a>
+                        <a href="areaCliente.php">Minha Conta</a>
                     </li>
                     <li class="nav-item">
                         <a href="troca.php">Troca e Devoluções</a>
@@ -61,29 +55,6 @@
                 </ul>
             </article>
             <!-- Fim Institucional -->
-
-            <!-- Mais Acessados-->
-            <article class="col-md-2">
-                <h4>
-                    Mais Acessados
-                </h4>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="#">Iniciação</a>
-                    </li>
-                    <li class="nav-item ellipsis">
-                        <a href="#">Segredo na floresta pt. 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">O Espreitador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Livro do Bill</a>
-                    </li>
-                </ul>
-            </article>
-            <!-- Fim Mais Acessados -->
-
         </section>
         <!-- Fim Menus -->
     </section>

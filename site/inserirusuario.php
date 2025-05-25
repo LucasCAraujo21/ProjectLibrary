@@ -7,7 +7,7 @@
     $email = $_POST['txtemail'];
     $senha = $_POST['txtsenha'];
     $CPF = $_POST['txtcpf'];
-/*
+    /*
     echo $nome .'<br>';
     echo $email .'<br>';
     echo $senha .'<br>';
