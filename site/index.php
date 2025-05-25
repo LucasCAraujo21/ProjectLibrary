@@ -15,7 +15,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <title>BooksOnline</title>
-            <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
         
         <style type = "text/css">
@@ -28,14 +28,13 @@
 
     <body>
         <?php 
-        session_start();
-        include 'conexao.php'; 
-        include 'nav.php';
-        include 'cabecalho.html';
+            session_start();
+            include 'conexao.php'; 
+            include 'nav.php';
+            include 'cabecalho.html';
 
-        //variavel "consulta" que recebe variavel "cn"(conexao), no qual recebe o resultado de uma consulta no banco
-        $consulta = $cn-> query('select id_liv, nome_liv, valor, img_liv, quant_liv from livro');
-
+            //variavel "consulta" que recebe variavel "cn"(conexao), no qual recebe o resultado de uma consulta no banco
+            $consulta = $cn-> query('select id_liv, nome_liv, valor, img_liv, quant_liv from livro');
         ?>
 
         <main>

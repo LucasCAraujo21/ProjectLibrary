@@ -39,9 +39,9 @@
         <div class="col-sm-1 col-xs-offset-right-1" style="paddig-top:2px">        
             <!-- remove o item do carrinho pelo id -->     
             <a href="removeCarrinho.php?cd=<?php echo $cd;?>">
-            <button type="submit" class="btn btn-success col-md-6">Excluir</button>
-            <span class="glyphicon glyphicon-remove"> </span>  
-            </button>
+                <button type="submit" class="btn btn-success btn-warning btn-lg finaliza">
+                    <span style="color:white" class="glyphicon glyphicon-remove"></span>  
+                </button>
             </a>               
         </div> 
     </div>		

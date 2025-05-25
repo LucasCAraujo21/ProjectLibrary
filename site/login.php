@@ -34,7 +34,7 @@
                             Lembrar senha
                         </label>
 
-                        <a href="#">Esqueci a senha</a>
+                        <a href="recupSenha.php">Esqueci a senha</a>
                     </div>
 
                     <button type="submit" class="login">Login</button>
