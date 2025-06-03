@@ -2,7 +2,7 @@ create database db_booksonline;
 use db_booksonline;
 drop database db_booksonline;
 
--- tabela usuario que tem funcionario como chave estrangeira e esta interligada com venda
+-- tabela usuario
 create table usuario(
  id_usu int auto_increment primary key,
  nome_usu varchar(80) not null,
@@ -12,7 +12,7 @@ create table usuario(
  ds_status boolean not null
 );
 
--- tabela livro que tem funcionario como chave estrangeira e esta interligada com venda e comissão
+-- tabela livro
 create table livro(
 id_liv int auto_increment primary key,
 id_categoria int not null,
@@ -46,6 +46,44 @@ id_usu int(11) not null,
 id_liv int(11) not null
 );
 
+
+-- view
+create view vw_livro
+as select 
+	livro.id_liv,
+    categoria.ds_categoria,
+    livro.valor,
+    livro.quant_liv,
+    livro.nome_liv,
+    livro.desc_liv,
+    livro.img_liv
+from livro inner join categoria on livro.id_categoria = categoria.id_categoria;
+
+create view vw_venda as
+select 
+		venda.no_ticket,
+        venda.id_usu,
+        venda.dt_venda,
+		livro.nome_liv,
+        venda.qt_liv,
+        venda.valor_venda
+from venda inner join livro on venda.id_liv = livro.id_liv;
+
+
+-- selects
+select * from livro;
+select * from vw_livro where nome_liv like '%ordem%';
+select * from venda;
+select * from vw_venda where id_usu = 5;
+select * from usuario;
+
+select nome_usu, email_usu, senha_usu from usuario where email_usu = 'kat@gmail.com';
+
+select * from categoria;
+select nome_liv, valor, img_liv, quant_liv from vw_livro where ds_categoria = 'Terror';
+
+
+
 -- inserts--
 insert into categoria
 values(default, 'Sci-fi'),
@@ -71,38 +109,6 @@ insert into venda(no_ticket, id_usu, id_liv, qt_liv, vl_liv, dt_venda)
 values(111222333, 2, 70, 2, 13.00, '2025-10-02');
 
 
--- selects
-select * from livro;
-select * from vw_livro where nome_liv like '%ordem%';
-select * from venda;
-select * from vw_venda where id_usu = 2;
-select * from usuario;
-select * from categoria;
-
-select nome_liv, valor, img_liv, quant_liv from vw_livro where ds_categoria = 'Terror';
-
--- view
-create view vw_livro
-as select 
-	livro.id_liv,
-    categoria.ds_categoria,
-    livro.valor,
-    livro.quant_liv,
-    livro.nome_liv,
-    livro.desc_liv,
-    livro.img_liv
-from livro inner join categoria on livro.id_categoria = categoria.id_categoria;
-
-create view vw_venda as
-select 
-		venda.no_ticket,
-        venda.id_usu,
-        venda.dt_venda,
-        venda.qt_liv,
-        venda.valor_venda,
-        livro.nome_liv
-from venda inner join livro on venda.id_liv = livro.id_liv;
-
 -- alter table
 alter table usuario
 MODIFY COLUMN desc_liv varchar(2000) not null;
@@ -111,40 +117,14 @@ ALTER TABLE usuario
 ADD COLUMN ds_status boolean not null;
 
 
+
 -- update
 UPDATE livro
 SET img_liv = 'iniciacao'
 WHERE ID_LIV = 1;
 
 
-
-
-
-
-
-
-
--- tabela pagamento que tem funcionario como chave estrangeira 
-create table pagamento(
-id_pag int auto_increment primary key,
-tipo_pag varchar(10) not null,
-valor_total int not null,
-id_func int,
-  constraint foreign key (id_func) references funcionario(id_func)
-);
-
--- tabela agenda que tem funcionario como chave estrangeira 
-create table agenda(
-periodo datetime not null,
-desc_agenda varchar(50) not null,
-id_func int primary key,
-  constraint foreign key (id_func) references funcionario(id_func)
-);
-
-
-
-
-
+-- linhas para a conexão do php com o banco
 create user 'lib'@'localhost' identified with mysql_native_password by '123456';
 grant all privileges on db_booksonline.* to 'lib'@'localhost' with grant option;
 
